@@ -208,19 +208,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\stewa\\.nuget\\packages\\": {}
+    "C:\\Users\\mckenziebyrd\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\stewa\\workspace\\nss_backend\\Projects\\SpyDuhCatWoman\\SpyDuhCatWoman.csproj",
+      "projectUniqueName": "C:\\Users\\mckenziebyrd\\Source\\Repos\\SpyDuh-Catwoman_\\SpyDuhCatWoman.csproj",
       "projectName": "SpyDuhCatWoman",
-      "projectPath": "C:\\Users\\stewa\\workspace\\nss_backend\\Projects\\SpyDuhCatWoman\\SpyDuhCatWoman.csproj",
-      "packagesPath": "C:\\Users\\stewa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\stewa\\workspace\\nss_backend\\Projects\\SpyDuhCatWoman\\obj\\",
+      "projectPath": "C:\\Users\\mckenziebyrd\\Source\\Repos\\SpyDuh-Catwoman_\\SpyDuhCatWoman.csproj",
+      "packagesPath": "C:\\Users\\mckenziebyrd\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mckenziebyrd\\Source\\Repos\\SpyDuh-Catwoman_\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\stewa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mckenziebyrd\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
