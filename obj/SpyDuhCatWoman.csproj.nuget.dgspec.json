@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mckenziebyrd\\Source\\Repos\\SpyDuh-Catwoman_\\SpyDuhCatWoman.csproj": {}
+    "C:\\Users\\mckenziebyrd\\Source\\Repos\\SpyDuh-Catwoman\\SpyDuhCatWoman.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mckenziebyrd\\Source\\Repos\\SpyDuh-Catwoman_\\SpyDuhCatWoman.csproj": {
+    "C:\\Users\\mckenziebyrd\\Source\\Repos\\SpyDuh-Catwoman\\SpyDuhCatWoman.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mckenziebyrd\\Source\\Repos\\SpyDuh-Catwoman_\\SpyDuhCatWoman.csproj",
+        "projectUniqueName": "C:\\Users\\mckenziebyrd\\Source\\Repos\\SpyDuh-Catwoman\\SpyDuhCatWoman.csproj",
         "projectName": "SpyDuhCatWoman",
-        "projectPath": "C:\\Users\\mckenziebyrd\\Source\\Repos\\SpyDuh-Catwoman_\\SpyDuhCatWoman.csproj",
+        "projectPath": "C:\\Users\\mckenziebyrd\\Source\\Repos\\SpyDuh-Catwoman\\SpyDuhCatWoman.csproj",
         "packagesPath": "C:\\Users\\mckenziebyrd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mckenziebyrd\\Source\\Repos\\SpyDuh-Catwoman_\\obj\\",
+        "outputPath": "C:\\Users\\mckenziebyrd\\Source\\Repos\\SpyDuh-Catwoman\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mckenziebyrd\\AppData\\Roaming\\NuGet\\NuGet.Config",
