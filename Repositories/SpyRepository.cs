@@ -6,9 +6,10 @@ namespace SpyDuhCatWoman.Repositories
     {
         private static List<Spy> _spyData = new();
 
-        public void CreateSpy(Spy newSpy)
+        public bool CreateSpy(Spy value)
         {
-            _spyData.Add(newSpy);
+            _spyData.Add(value);
+            return true;
         }
 
         public List<Spy> GetAll()

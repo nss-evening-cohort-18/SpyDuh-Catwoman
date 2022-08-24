@@ -1,6 +1,10 @@
-﻿namespace SpyDuhCatWoman.Interfaces
+﻿using SpyDuhCatWoman.Models;
+    
+    namespace SpyDuhCatWoman.Interfaces
 {
-    public class ISpyRepository
+    public interface ISpyRepository
     {
+        List<Spy> GetAll();
+        bool CreateSpy(Spy spy);
     }
 }

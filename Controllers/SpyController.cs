@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SpyDuhCatWoman.Models;
 using SpyDuhCatWoman.Repositories;
+using SpyDuhCatWoman.Interfaces;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -10,7 +11,14 @@ namespace SpyDuhCatWoman.Controllers
     [ApiController]
     public class SpyController : ControllerBase
     {
-        private SpyRepository _spyRepo = new();
+        public SpyController(ISpyRepository SpyRepository)
+        {
+            _spyRepo = SpyRepository;
+        }
+
+        private ISpyRepository _spyRepo;
+
+        
 
         // GET: api/<SpyController>
         [HttpGet] //GetSpies() - returns a list of all spies
