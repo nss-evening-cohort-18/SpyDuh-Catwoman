@@ -8,6 +8,7 @@ namespace SpyDuhCatWoman.Models
         public string Alias { get; set; }
 
         public List<IAttribute> Attributes = new List<IAttribute>();
+        public List<string> Skills { get; set; }
         public List<int> Friends { get; set; } = new();
         public List<int> Enemies { get; set; } = new();
     }
