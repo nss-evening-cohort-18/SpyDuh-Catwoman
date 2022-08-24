@@ -1,12 +1,14 @@
-﻿namespace SpyDuhCatWoman.Models
+﻿using SpyDuhCatWoman.Interfaces;
+
+namespace SpyDuhCatWoman.Models
 {
     public class Spy
     {
-        int Id { get; set; }
-        string Alias { get; set; }
-        List<string> Skills { get; set; } = new();
-        List<string> Services { get; set; } = new();
-        List<int> Friends { get; set; } = new();
-        List<int> Enemies { get; set; } = new();
+        public int Id { get; set; }
+        public string Alias { get; set; }
+
+        public List<IAttribute> Attributes = new List<IAttribute>();
+        public List<int> Friends { get; set; } = new();
+        public List<int> Enemies { get; set; } = new();
     }
 }
