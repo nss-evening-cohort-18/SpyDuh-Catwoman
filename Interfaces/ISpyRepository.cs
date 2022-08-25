@@ -6,5 +6,8 @@
     {
         List<Spy> GetAll();
         bool CreateSpy(Spy spy);
+        Spy GetById(int id);
+        List<Spy> GetBySkill(string skill);
+
     }
 }

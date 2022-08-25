@@ -1,8 +1,9 @@
-﻿using SpyDuhCatWoman.Models;
+﻿using SpyDuhCatWoman.Interfaces;
+using SpyDuhCatWoman.Models;
 
 namespace SpyDuhCatWoman.Repositories
 {
-    public class SpyRepository
+    public class SpyRepository : ISpyRepository
     {
         private static List<Spy> _spyData = new()
         {
