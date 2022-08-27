@@ -1,6 +1,10 @@
+using SpyDuhCatWoman.Interfaces;
+using SpyDuhCatWoman.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddTransient<ISpyRepository, SpyRepository>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

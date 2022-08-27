@@ -1,7 +1,44 @@
-﻿using SpyDuhCatWoman.Models;
+﻿using SpyDuhCatWoman.Interfaces;
+using SpyDuhCatWoman.Models;
 
 namespace SpyDuhCatWoman.Repositories
 {
+    public class SpyRepository : ISpyRepository
+    {
+        private static List<Spy> _spyData = new()
+        {
+            new Spy()
+            {
+                Id = 1,
+                Alias = "John",
+                Skills = new List<string>()
+                {
+                    "Hacking",
+                    "Pickpocketing"
+                }
+            },
+            new Spy()
+            {
+                Id = 2,
+                Alias = "Tommy",
+                Skills = new List<string>()
+                {
+                    "Sneaking",
+                    "Hacking",
+                }
+            },
+            new Spy()
+            {
+                Id = 3,
+                Alias = "Robert",
+                Skills = new List<string>()
+                {
+                    "Sneaking",
+                    "Pickpocketing"
+                }
+            }
+        };
+
     public class SpyRepository
     {
         private static List<Spy> _spyData = new();

@@ -28,10 +28,17 @@ namespace SpyDuhCatWoman.Controllers
         }
 
         // GET api/<SpyController>/5
-        [HttpGet("{id}")] //GetSpy() - returns specific spies information
-        public string Get(int id)
+        [HttpGet("/api/Spy/{id}")] //GetSpy() - returns specific spies information
+        public Spy Get(int id)
         {
-            return ""; //_spyRepo.GetById();
+            return _spyRepo.GetById(id); //_spyRepo.GetById();
+        }
+
+        // GET api/<SpyController>/5
+        [HttpGet("/api/Spy/user/{skill}")] //GetSpy() - returns specific spies information
+        public List<Spy> GetBySkill(string skill)
+        {
+            return _spyRepo.GetBySkill(skill); //_spyRepo.GetBySkill();
         }
 
         // POST api/<SpyController>
