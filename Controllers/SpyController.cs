@@ -42,16 +42,22 @@ namespace SpyDuhCatWoman.Controllers
         }
 
         // PUT api/<SpyController>/5
-        [HttpPut("skills")] //AddSkill(string skill) - adds a new to skill to current spies skill list
-        public void PutSkills(int id, [FromBody] string value)
+        [HttpPost("skills")] //AddSkill(string skill) - adds a new to skill to current spies skill list
+        public void PostNewSkill(int id, [FromBody] string value)
         {
+            int spyId = id;
+            string skill = value;
+            
         }
 
 
         // PUT api/<SpyController>/5
-        [HttpPut("services")] //AddServices(string service) - adds a new to service to the current spies services list
-        public void PutServices(int id, [FromBody] string value)
+        [HttpPost("{id}/services")] //AddServices(string service) - adds a new to service to the current spies services list
+        public void PostNewServices(int id, [FromBody] string value)
         {
+            Service newService = new();
+            newService.Description = value;
+            _spyRepo.PostService(newService, id);
         }
 
 

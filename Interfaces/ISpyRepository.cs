@@ -6,5 +6,6 @@
     {
         List<Spy> GetAll();
         bool CreateSpy(Spy spy);
+        void PostService(Service service, int id);
     }
 }
