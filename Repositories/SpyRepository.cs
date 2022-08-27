@@ -59,7 +59,7 @@ namespace SpyDuhCatWoman.Repositories
 
         public List<Spy> GetBySkill(string skill)
         {
-            throw new NotImplementedException();
+            return _spyData.Where(p => p.Skills.Contains(skill)).ToList();
         }
 
         public void PostService(string value, int spyId)
