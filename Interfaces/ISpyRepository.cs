@@ -9,6 +9,7 @@
         Spy GetById(int id);
         List<Spy> GetBySkill(string skill);
 
-        void PostService(Service service, int id);
+        void PostService(string service, int id);
+        void PostSkill(string skill, int id);
     }
 }
