@@ -15,7 +15,8 @@ namespace SpyDuhCatWoman.Repositories
                 {
                     "Hacking",
                     "Pickpocketing"
-                }
+                },
+                Services = new List<string>()
             },
             new Spy()
             {
@@ -25,7 +26,8 @@ namespace SpyDuhCatWoman.Repositories
                 {
                     "Sneaking",
                     "Hacking",
-                }
+                },
+                Services = new List<string>()
             },
             new Spy()
             {
@@ -35,7 +37,8 @@ namespace SpyDuhCatWoman.Repositories
                 {
                     "Sneaking",
                     "Pickpocketing"
-                }
+                },
+                Services = new List<string>()
             }
         };
 
@@ -43,6 +46,10 @@ namespace SpyDuhCatWoman.Repositories
         {
             _spyData.Add(value);
             return true;
+        }
+        public List<Spy> GetAll()
+        {
+            return _spyData;
         }
 
         public Spy GetById(int id)
@@ -52,12 +59,20 @@ namespace SpyDuhCatWoman.Repositories
 
         public List<Spy> GetBySkill(string skill)
         {
-            return _spyData.Where(p => p.Skills.Contains(skill)).ToList();
+            throw new NotImplementedException();
         }
 
-        public List<Spy> GetAll()
+        public void PostService(string value, int spyId)
         {
-            return _spyData;
+            Spy SpyMatch = _spyData.Find((x) => x.Id == spyId);
+            SpyMatch.Services.Add(value);
         }
+        public void PostSkill(string value, int spyId)
+        {
+            Spy SpyMatch = _spyData.Find((x) => x.Id == spyId);
+            SpyMatch.Skills.Add(value);
+        }
+
     }
 }
+
