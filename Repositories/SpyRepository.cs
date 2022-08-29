@@ -15,6 +15,10 @@ namespace SpyDuhCatWoman.Repositories
                 {
                     "Hacking",
                     "Pickpocketing"
+                },
+                Enemies = new List<int>()
+                {
+                    3
                 }
             },
             new Spy()
@@ -44,6 +48,21 @@ namespace SpyDuhCatWoman.Repositories
             _spyData.Add(value);
             return true;
         }
+
+        public bool CreateEnemy(Spy enemy)
+        {
+            _spyData.Add(enemy);
+            return true;
+        }
+
+        public List<Spy> GetByEnemy(int enemy)
+        {
+            Spy foundSpy = _spyData.FirstOrDefault(p => p.Id == enemy);
+            List<Spy> result = new List<Spy>();
+            foundSpy.Enemies.ForEach(s => result.Add(_spyData.FirstOrDefault(p => p.Id == s)));
+            return result;
+        }
+
 
         public Spy GetById(int id)
         {

@@ -6,8 +6,10 @@
     {
         List<Spy> GetAll();
         bool CreateSpy(Spy spy);
+        bool CreateEnemy(Spy newEnemy);
         Spy GetById(int id);
         List<Spy> GetBySkill(string skill);
 
+        List<Spy> GetByEnemy(int enemy);
     }
 }

@@ -41,12 +41,28 @@ namespace SpyDuhCatWoman.Controllers
             return _spyRepo.GetBySkill(skill); //_spyRepo.GetBySkill();
         }
 
+        // GET api/<SpyController>/5
+        [HttpGet("/api/Spy/user/enemy/{enemyId}")] //GetEnemy() - returns specific spies enemy
+        public List<Spy> GetByEnemy(int enemyId)
+        {
+            return _spyRepo.GetByEnemy(enemyId); //_spyRepo.GetBySkill();
+        }
+
         // POST api/<SpyController>
         [HttpPost] //CreateSpy(Spy newSpy) - adds a new spy to the database
         public void Post([FromBody] Spy newSpy)
         {
             _spyRepo.CreateSpy(newSpy);
         }
+
+        // POST api/<SpyController>
+        [HttpPost("enemies")] //CreateEnemy(Spy newSpy) - adds a new enemy to the spys database
+        public void PostEnemies([FromBody] Spy newEnemy)
+        {
+            _spyRepo.CreateEnemy(newEnemy);
+        }
+
+
 
         // PUT api/<SpyController>/5
         [HttpPut("skills")] //AddSkill(string skill) - adds a new to skill to current spies skill list
@@ -70,7 +86,8 @@ namespace SpyDuhCatWoman.Controllers
 
 
         // PUT api/<SpyController>/5
-        [HttpPut("enemies")] //AddEnemy(int spyId) - adds a new spy to the users enemy list
+        //is this the right path? or should it be just "enemies"
+        [HttpPut("/api/Spy/user/{enemy}")] //AddEnemy(int spyId) - adds a new spy to the users enemy list
         public void PutEnemy(int id, [FromBody] string value)
         {
         }
